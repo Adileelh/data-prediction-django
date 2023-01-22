@@ -1,4 +1,5 @@
 {% load static %}
+{% load tailwind_tags %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,10 +14,11 @@
     <title>Prédiction</title>
 
     <link
-      href="{% static 'images/favicon.ico' %}"
+      href=""
       rel="shortcut icon"
       type="image/x-icon"
     />
+    {%tailwind_css%}
 
   </head>
   {% include 'includes/navbar.html' %}

@@ -8,4 +8,5 @@ def predict(request):
     return render(request, "predict/predict.html")
 # Create your views here.
 def contact(request):
-    return HttpResponse("this is my contact page")
+    
+    return render(request, "contact/contact.html")

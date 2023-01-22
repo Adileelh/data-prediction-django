@@ -1,1 +1,115 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block content %}
+
+<section class="text-gray-600 body-font relative">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1
+        class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
+      >
+        Estimez votre votre montant annuelle
+      </h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+        Profitez de l'offre ASSU2023 après votre estimation.
+      </p>
+    </div>
+    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+      <div class="flex flex-wrap -m-2">
+        <form class="flex flex-wrap" action="">
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="age" class="leading-7 text-sm text-gray-600"
+                >Age</label
+              >
+              <input
+                type="text"
+                id="age"
+                name="age"
+                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+          </div>
+
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="underline_select" class="">Sexe</label>
+              <select
+                id="underline_select"
+                class="py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent appearance-none focus:outline-none focus:ring-0 focus:border-gray-200"
+              >
+                <option value="0">Femme</option>
+                <option value="1">Homme</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="bmi" class="leading-7 text-sm text-gray-600"
+                >BMI</label
+              >
+              <input
+                type="text"
+                id="bmi"
+                name="bmi"
+                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+          </div>
+
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="underline_select" class="">Fumez-vous?</label>
+              <select
+                id="underline_select"
+                class="py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent appearance-none focus:outline-none focus:ring-0 focus:border-gray-200"
+              >
+                <option value="1">oui</option>
+                <option value="0">non</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="name" class="leading-7 text-sm text-gray-600"
+                >Enfant(s)</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+          </div>
+
+          <div class="p-2 w-1/2">
+            <div class="relative">
+                <label for="underline_select" class="">Région</label>
+                <select
+                  id="underline_select"
+                  class="py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent appearance-none focus:outline-none focus:ring-0 focus:border-gray-200"
+                >
+                  <option value="1">Centre</option>
+                  <option value="2">Pays de la Loire</option>
+                  <option value="3">Ile de France</option>
+                  <option value="4">Bretagne</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 w-full">
+            <button
+              class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            >
+              Button
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}
