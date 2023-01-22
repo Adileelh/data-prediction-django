@@ -7,7 +7,7 @@ model = joblib.load('static/random_forest_regressor')
 
 
 def index(request):
-    return HttpResponse("this is my home page")
+    return render(request, "index/index.html")
 # Create your views here.
 
 
@@ -23,7 +23,8 @@ def predict(request):
 
         # print(age, sex, bmi, children, smoker, region)
 
-        pred = model.predict([[age, sex, bmi, children, smoker, region]])
+        pred = round(model.predict(
+            [[age, sex, bmi, children, smoker, region]])[0])
 
         context = {
             'prediction': pred
