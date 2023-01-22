@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="max-age=604800" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Prédiction</title>
+
+    <link
+      href="{% static 'images/favicon.ico' %}"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+
+  </head>
+  {% include 'includes/navbar.html' %}
+  <body>
+    {% block content %} {% endblock %}
+  </body>
+  {% include 'includes/footer.html' %}
+  <!-- ========================= FOOTER END // ========================= -->
+</html>
